@@ -5,13 +5,14 @@
   <div class="column is-one-third">
     <nav class="panel is-link">
       <p class="panel-heading">
-        <%= @entry.task_name %>
+        <%= @entry.task_name %> |
+        <%= @entry.category.title%>
       </p>
       <div class="panel-block">
         difficulty: <%= @entry.difficulty %>
       </div>
       <div class="panel-block">
-        Proteins:<%= @entry.points %>
+        Points: <%= @entry.points %>
       </div>
     
     </nav>

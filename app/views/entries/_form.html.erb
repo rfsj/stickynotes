@@ -29,6 +29,14 @@
     <%= form.number_field :points, class:"input"  %>
   </div>
 
+  <div class="field">
+    <div class="select">
+      <%= form.label :points, class:"label"  %>
+      <%= form.select :category_id, Category.all.collect {|u| [u.title, u.id]}, {}, class:"select"  %>
+    </div>
+  </div>
+<br>
+
   <div class="actions">
     <%= form.submit class:"button is-link" %>
   </div>

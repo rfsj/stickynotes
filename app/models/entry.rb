@@ -1,5 +1,5 @@
 class Entry < ApplicationRecord
-    
+    belongs_to :category
     validates :task_name, :difficulty, :points, presence: true
     
     def day
